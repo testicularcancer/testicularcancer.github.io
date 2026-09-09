@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Costco Party</title>
+	<title id= "text">Costco Party</title>
 	<style>
 		body {
 			display: flex;
@@ -12,7 +12,7 @@
 	</style>
 </head>
 <body>
-	<h1 id="text">Costco Party</h1>
+	<h1 id="textAlso">Costco Party</h1>
 	<h2 id="textTwo"> 1039 Augusta St, West Columbia, SC, 29169<br>9:00PM 9/10/2026</h2>
 	<img id="picture" src="./IMG_1.png" style="max-width: 100%; height: auto;">
 	<br>
@@ -28,11 +28,13 @@
             let code = document.getElementById("code").value;
             let picture = document.getElementById("picture");
 			let text = document.getElementById("text");
+			let textAlso = document.getElementById("textAlso");
 			let textTwo = document.getElementById("textTwo");
 
             if (code === "227") {
                 picture.src = "./IMG_2.png";
 				text.textContent = "Kirkiversary";
+				textAlso.textContent = "Kirkiversary";
 				textTwo.textContent = "1039 Augusta St, West Columbia, SC, 29169"<br>"9:00PM 9/10/1 (AK)";
             }
             else {
