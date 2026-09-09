@@ -12,8 +12,8 @@
 	</style>
 </head>
 <body>
-	<h1>Kirkiversary</h1>
-	<h2> 1039 Augusta St, West Columbia, SC, 29169<br>9:00PM 9/10/1 (AK)</h2>
+	<h1 id="text">Costco Party</h1>
+	<h2 id="textTwo"> 1039 Augusta St, West Columbia, SC, 29169<br>9:00PM 9/10/2026</h2>
 	<img id="picture" src="./IMG_1.png" style="max-width: 100%; height: auto;">
 	<br>
 	<input type="text" id="code" maxlength="3" inputmode="numeric" placeholder="Enter secret code">
@@ -28,10 +28,12 @@
             let code = document.getElementById("code").value;
             let picture = document.getElementById("picture");
 			let text = document.getElementbyId("text");
+			let textTwo = document.getElementbyId("textTwo");
 
             if (code === "227") {
                 picture.src = "./IMG_2.png";
-				text.text = "Kirkiversary";
+				text.textContent = "Kirkiversary";
+				textTwo.textContent = "1039 Augusta St, West Columbia, SC, 29169<br>9:00PM 9/10/1 (AK)";
             }
             else {
                 alert("Incorrect code!");
