@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kirkiversary</title>
+	<title id="text">Costco Party</title>
 	<style>
 		body {
 			display: flex;
@@ -27,9 +27,11 @@
 
             let code = document.getElementById("code").value;
             let picture = document.getElementById("picture");
+			let text = document.getElementbyId("text");
 
             if (code === "227") {
                 picture.src = "./IMG_2.png";
+				text.text = "Kirkiversary";
             }
             else {
                 alert("Incorrect code!");
