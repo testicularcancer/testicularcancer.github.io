@@ -15,6 +15,8 @@
 	<h1 id="textAlso">Costco Party</h1>
 	<h2 id="textTwo"> 1039 Augusta St, West Columbia, SC, 29169</h2>
 	<h2 id="textThree">9:00PM 9/10/2026</h2>
+	<p id="textLast">Dress up in your favorite costco attire!</p>
+	<p>free beer/seltzer will be first come first serve</p>
 	<img id="picture" src="./IMG_1.png" style="max-width: 100%; max-height: 100%; width: auto height: auto;">
 	<br>
 	<input type="text" id="code" maxlength="3" inputmode="numeric" placeholder="Enter secret code">
@@ -32,6 +34,7 @@
 			let textAlso = document.getElementById("textAlso");
 			let textTwo = document.getElementById("textTwo");
 			let textThree = document.getElementById("textThree");
+			let textLast = document.getElementById("textLast");
 
             if (code === "227") {
                 picture.src = "./IMG_2.png";
@@ -39,6 +42,7 @@
 				textAlso.textContent = "Kirkiversary";
 				textTwo.textContent = "1039 Augusta St, West Columbia, SC, 29169";
 				textThree.textContent = "9:00PM 9/10/1 (AK)";
+				textLast.textContent = "Dress up in your favorite kirk themed attire! Costco is also fine too ig.";
             }
             else {
                 alert("Incorrect code!");
